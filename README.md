@@ -1,7 +1,7 @@
 30c3-countdown-banner-180x270
 =============================
 
-Provides a 30c3 countdown banner in 180x270 to be integrated in Wordpress blogs or other sites. Derived from **Chaos Engel's** full site countdown [http://chaos-angel.at/30c3/](http://chaos-angel.at/30c3/)
+Provides a 30c3 countdown banner in 180x270 to be integrated in Wordpress blogs or other sites. Derived from **Chaos Engel's** full site countdown [http://chaos-angel.at/30c3/](http://chaos-angel.at/30c3/). Also makes use of the iPhone prepared wallpapers provided by **Evelyn Schubert** here [http://evelynschubert.com/30C3/wallpaper/](http://evelynschubert.com/30C3/wallpaper/).
 
 ## Screenshot
 
