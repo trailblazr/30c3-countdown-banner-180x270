@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Propaganda 30c3</title>
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200:italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<!-- START 30C3 PROPAGANDA -->
+<style type="text/css">
+body {
+	margin-left:0px;
+	margin-right:0px;
+}
+.countdown {
+  background-image: url(30c3_propaganda_180x270.png);
+  background-size:100%;
+  background-repeat:no-repeat;
+  max-width:180px;
+  margin:auto;
+  text-align: center;
+  color:white;
+  font-size:22px;
+  font-weight:100;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	padding:7px;
+	border:none;
+}
+.countdownElement {
+	font-family:'Source Sans Pro',Helvetica,Arial,Sans-Serif;
+	display: inline-block;
+}
+.foo {
+  /*display:block;*/
+  color:white;
+  font-size:18px;
+}
+</style>
+  <div class="countdown" style="width:180px;height:270px;cursor:pointer;" data-targetdate="2013-12-26T15:00Z" onclick="document.location.href='https://events.ccc.de/congress/2013/wiki/Main_Page';">
+  	<div class="countdownLine" style="margin-top:70px;">
+    <div class="countdownElement"><span class="days">0</span><span class="foo">d </span></div>
+    <div class="countdownElement"><span class="hours">0</span><span class="foo">h </span></div>
+    <div class="countdownElement"><span class="minutes">0</span><span class="foo">m </span></div>
+    <div class="countdownElement"><span class="seconds">0</span><span class="foo">s</span></div>
+    </div>
+  </div>
+<!-- END 30C3 PROPAGANDA -->
+
+</body>
+
+<!-- START 30C3 PROPAGANDA LOGIC -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+	var DEBUG_MASTER = false;
+	var countDown = $('.countdown');
+	if( DEBUG_MASTER ) console.log($('.countdown').data("targetdate"));
+	var days = $('.days'),
+	hours = $('.hours'),
+	minutes = $('.minutes'),
+	seconds = $('.seconds'),
+	targetDate = new Date(countDown.data("targetdate")).getTime(),
+	timeDiffrence = {};
+	
+	function zeroFill( number, width ) {
+		width -= number.toString().length;
+		if ( width > 0 )
+		{
+		  return new Array( width + (/\./.test( number ) ? 2 : 1) ).join( '0' ) + number;
+		}
+		return number + ""; // always return a string
+	}
+	
+	function calculateTimeDiffrence (currentDate, targetDate) {
+		var tmpTime = targetDate - currentDate;
+		if( DEBUG_MASTER ) console.log(targetDate + ', ' + currentDate);
+		if( DEBUG_MASTER ) console.log(tmpTime);
+		if (timeDiffrence) {
+			timeDiffrence.days = zeroFill(Math.floor(tmpTime/1000/60/60/24), 2);
+			tmpTime -= timeDiffrence.days*24*60*60*1000;
+			timeDiffrence.hours = zeroFill(Math.floor(tmpTime/1000/60/60), 2);
+			tmpTime -= timeDiffrence.hours*60*60*1000;
+			timeDiffrence.minutes = zeroFill(Math.floor(tmpTime/1000/60), 2);
+			tmpTime -= timeDiffrence.minutes*60*1000;
+			timeDiffrence.seconds = zeroFill(Math.floor(tmpTime/1000), 2);
+			if( DEBUG_MASTER ) console.log(timeDiffrence);
+		}
+	}
+	
+	function updateCountDown (countDown) {
+		var currentDate = new Date().getTime();
+		if( DEBUG_MASTER ) console.log(currentDate);
+		if( DEBUG_MASTER ) console.log($('.countdown'));
+		calculateTimeDiffrence(currentDate, targetDate);
+		days.text(timeDiffrence.days);
+		hours.text(timeDiffrence.hours);
+		minutes.text(timeDiffrence.minutes);
+		seconds.text(timeDiffrence.seconds);
+	}
+	
+	(function() {
+	nIntervId = setInterval(updateCountDown, 1000);
+	})();
+
+</script>
+<!-- END 30C3 PROPAGANDA LOGIC -->
+
+</html>
