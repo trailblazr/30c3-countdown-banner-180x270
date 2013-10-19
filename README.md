@@ -9,11 +9,18 @@ Example screenshot of the banner integrated in a wordpress blog's sidebar.
 
 ![image](https://github.com/trailblazr/30c3-countdown-banner-180x270/blob/master/30c3_banner_example.png?raw=true)
 
-## Recommended use
+## Features
 
-* Add respectively marked code for jQuery lib **(needed for logic!)** to head
-* Add respectively marked code for the banner itself to body e.g. sidebar
-* Add respectively marked code for al the countdown logic to the footer
+* portrait banner optimized for use in sidebars of blogs
+* onclick over will transport you to 30c3 wiki
+* counts down the remaining time until congress starts
+* helps you keep track of the upcoming event to avoid Verpeilungs-errors
+
+## Installation
+
+1. Add respectively marked code for jQuery lib **(needed for logic!)** to head
+2. Add respectively marked code for the banner itself to body e.g. sidebar
+3. Add respectively marked code for al the countdown logic to the footer
 
 That's it! have fun and see you all in december.
 
