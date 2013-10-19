@@ -20,7 +20,7 @@ Example screenshot of the banner integrated in a wordpress blog's sidebar.
 
 1. Add respectively marked code for jQuery lib **(needed for logic!)** to head
 2. Add respectively marked code for the banner itself to body e.g. sidebar
-3. Add respectively marked code for al the countdown logic to the footer
+3. Add respectively marked code for all the countdown logic to the footer
 
 That's it! have fun and see you all in december.
 
