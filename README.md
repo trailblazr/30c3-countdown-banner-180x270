@@ -16,3 +16,7 @@ Example screenshot of the banner integrated in a wordpress blog's sidebar.
 * Add respectively marked code for al the countdown logic to the footer
 
 That's it! have fun and see you all in december.
+
+## Example use in blog
+
+See [http://www.thetawelle.de](http://www.thetawelle.de) for an example of the banner in action.
