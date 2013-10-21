@@ -14,7 +14,7 @@ Example screenshot of the banner integrated in a wordpress blog's sidebar.
 * portrait banner optimized for use in sidebars of blogs
 * onclick over will transport you to 30c3 wiki
 * counts down the remaining time until congress starts
-* helps you keep track of the upcoming event to avoid Verpeilungs-errors
+* helps you keep track of the upcoming [30c3 Chaos Communication Congress](https://events.ccc.de/) to avoid Verpeilungs-errors
 
 ## Installation
 
