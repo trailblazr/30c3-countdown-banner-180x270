@@ -24,6 +24,15 @@ Example screenshot of the banner integrated in a wordpress blog's sidebar.
 
 That's it! have fun and see you all in december.
 
+## License
+
+All code is published under GPLv3.
+
+## Attribution
+
+* The code was taken from [30c3_countdown](https://github.com/zeidlos/30c3_countdown) by [zeidlos](https://github.com/zeidlos)
+* The gfx has been published by Evelyn Schubert at [http://evelynschubert.com/30C3/wallpaper/](http://evelynschubert.com/30C3/wallpaper/) under **[CC-BY-SA](http://creativecommons.org/licenses/by-sa/2.0/)** as a wallpaper. The GPLv3 does not apply here.
+
 ## Example use in blog
 
 See [http://www.thetawelle.de](http://www.thetawelle.de) for an example of the banner in action.
